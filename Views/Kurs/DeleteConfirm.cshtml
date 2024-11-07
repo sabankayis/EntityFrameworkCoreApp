@@ -1,0 +1,13 @@
+@model Kurs
+<div class="mb-3">
+    <form asp-controller="Kurs" asp-action="Delete">
+        <input type="hidden" asp-for="KursId">
+        <div class="mb-3">
+          <p>@Model.Baslik isimli kursu silmek istiyor musunuz ?</p>
+        </div>
+        <button class="btn btn-secondary"><a href="/Kurs/Index">Hayır</a> </button>
+        <button type="submit" class="btn btn-secondary">
+          <a>Sil</a>
+        </button>
+    </form>
+</div>
